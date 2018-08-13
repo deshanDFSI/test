@@ -7,7 +7,8 @@ static void myunittest(){
  // System.assert(false);
  myclass demo = new myclass();
  System.assertEquals(demo.getAppVersion(), '1.0.0');
-System.assert(false);
+//System.assert(false);
+System.assertEquals(0,1);
 
 }
 
