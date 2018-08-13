@@ -1,13 +1,17 @@
 @isTest
-public class SampleFailingTestClass {
+private class mytest{
+@isTest
+static void myunittest(){
+//add -1
+//System.assertEquals(0,1);
+ // System.assert(false);
+ myclass demo = new myclass();
+ System.assertEquals(demo.getAppVersion(), '1.0.0');
+System.assert(false);
 
-    public static testmethod void failingTest() {
-        Account acc = new Account(Name= 'fred');
-        insert acc;
+}
 
-        Account retAcc = [select id, phone from Account where id=:acc.id][0];
-        //System.assertEquals('865309', retAcc.phone); // Always fails.
-          System.assertEquals(1,1);
-    
-    }
+
+
+
 }
