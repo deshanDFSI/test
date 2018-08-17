@@ -64,7 +64,7 @@
 	
 	 <!-- Shows deploying code with no TestLevel sepcified -->
     <target name="deployCodeNoTestLevelSpecified">
-      <sf:deploy username="${sf.username1}" password="${sf.password1}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="codepkg" rollbackOnError="true"/>
+      <sf:deploy username="${sf.username1}" password="${sf.password1}"  serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="codepkg" rollbackOnError="true"/>
     </target>
 	
 	<!-- Shows deploying code and running tests only within the org namespace -->
