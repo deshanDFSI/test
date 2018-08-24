@@ -1,6 +1,6 @@
 <apex:page standardController="Account" sidebar="false">
     <apex:includeLightning />
-	<!--for deployment 24082018-->
+	<!--for deployment 24082018 from VSTS-->
     <div id="lightning" />
     <c:LMT_OpenInConsoleSubTab />
     <script>
