@@ -69,6 +69,14 @@
             <echo message="${file}" />
       <sf:deploy username="${sf.username1}" password="${sf.password1}"  serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="${sf.deployRoot}" rollbackOnError="true"/>
     </target>
+<target name="test.salesforce.com">
+	    <property name="file" value="${sf.serverurl}"/>
+            <echo message="${file}" />
+            
+	    <property name="dsfurl" value="${Dsf.serverurl}"/>
+	     <echo message="${dsfurl}" />
+      <sf:deploy username="${sf.username1}" password="${sf.password1}"  serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="${sf.deployRoot}" rollbackOnError="true"/>
+    </target>
 	
 	<!-- Shows deploying code and running tests only within the org namespace -->
 	<target name="deployCodeRunLocalTests">
