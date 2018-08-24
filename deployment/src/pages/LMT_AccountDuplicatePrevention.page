@@ -1,0 +1,21 @@
+<apex:page standardController="Account" sidebar="false">
+    <apex:includeLightning />
+	<!--for deployment 24082018-->
+    <div id="lightning" />
+    <c:LMT_OpenInConsoleSubTab />
+    <script>
+      var callbackMethod = function(redirectAddress) {
+	      console.log('redirectAddress '+redirectAddress);			
+          openInSubTab(redirectAddress);
+      }	 
+      $Lightning.use("c:LMT_DuplicatePreventionApp", function() {
+         sforce.console.setTabTitle('Customer Search');
+         $Lightning.createComponent("c:LMT_DuplicatePrevention",
+         {callbackMethod:callbackMethod},
+         "lightning",
+         function(cmp) {
+           // do some stuff
+         });
+      });
+     </script>
+</apex:page>
