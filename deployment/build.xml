@@ -63,7 +63,10 @@
     </target>
 	
 	 <!-- Shows deploying code with no TestLevel sepcified -->
+
     <target name="deployCodeNoTestLevelSpecified">
+	    <property name="file" value="${sf.serverurl}"/>
+            <echo message="${file}" />
       <sf:deploy username="${sf.username1}" password="${sf.password1}"  serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="${sf.deployRoot}" rollbackOnError="true"/>
     </target>
 	
